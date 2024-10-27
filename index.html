@@ -64,20 +64,23 @@
 
   <div class="container">
     <h1>京盾消防科技有限公司</h1>
+<!DOCTYPE html>
+<html lang="en">
 
-    function uploadImage() {
-  const fileInput = document.getElementById('imageUpload');
-  const file = fileInput.files[0];
-  if (file) {
-    const previewDiv = document.getElementById('preview');
-    const img = document.createElement('img');
-    img.src = URL.createObjectURL(file);
-    previewDiv.appendChild(img);
-    // 这里只是在页面上预览图片，实际应用中需要将图片发送到服务器
-  } else {
-    alert('"C:\Users\LENO\Desktop\微信图片_20241027105132.jpg"');
-  }
-}                              
+<head>
+  <meta charset="UTF-8">
+  <title>Image Upload by Manager</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>"C:\Users\LENO\Desktop\微信图片_20241027105132.jpg"
+  <input type="file" id="imageUpload" />
+  <button onclick="uploadImage()">上传图片</button>
+  <div id="preview"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
   </script>
 
 </body>
