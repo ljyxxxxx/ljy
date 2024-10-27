@@ -65,36 +65,19 @@
   <div class="container">
     <h1>京盾消防科技有限公司</h1>
 
-    <div class="upload-section">
-      <form action="upload.php" method="post" enctype="multipart/form-data">
-        <label for="fileToUpload">:"""C:\Users\LENO\Desktop\微信图片_20241027105132.jpg"</label>
-        <input type="file" name="fileToUpload" id="fileToUpload" onchange="previewImage()">
-        <input type="submit" value="上传图片" name="submit">
-      </form>
-    </div>
-
-    <div class="preview-section">
-      <img class="preview-img" src="#" alt="图片预览" id="imagePreview">
-    </div>
-  </div>
-
-  <script>
-    function previewImage() {
-      var fileInput = document.getElementById('fileToUpload');
-      var imagePreview = document.getElementById('imagePreview');
-
-      if (fileInput.files && fileInput.files[0]) {
-        var reader = new FileReader();
-
-        reader.onload = function (e) {
-          imagePreview.src = e.target.result;
-        }
-
-        reader.readAsDataURL(fileInput.files[0]);
-      } else {
-        imagePreview.src = '#';
-      }
-    }
+    function uploadImage() {
+  const fileInput = document.getElementById('imageUpload');
+  const file = fileInput.files[0];
+  if (file) {
+    const previewDiv = document.getElementById('preview');
+    const img = document.createElement('img');
+    img.src = URL.createObjectURL(file);
+    previewDiv.appendChild(img);
+    // 这里只是在页面上预览图片，实际应用中需要将图片发送到服务器
+  } else {
+    alert('"C:\Users\LENO\Desktop\微信图片_20241027105132.jpg"');
+  }
+}                              
   </script>
 
 </body>
