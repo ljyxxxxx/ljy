@@ -70,16 +70,91 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>图片展示网页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>摄影作品集 - 参赛作品</title>
+    <!-- 引入外部CSS样式表 -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>这是一个图片展示页面</h1>
-    <img src=""C:\Users\LENO\Desktop\微信图片_20241027105132.jpg"" alt="图片1" width="300" height="200">
-    <img src="image2.jpg" alt="图片2" width="300" height="200">
-    <img src="image3.jpg" alt="图片3" width="300" height="200">
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#portfolio">作品集</a></li>
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#contact">联系我</a></li>
+        </ul>
+    </nav>
+
+    <!-- 首页部分 -->
+    <section id="home">
+        <h1>欢迎来到我的摄影世界</h1>
+        <p>在这里，我将与您分享我用镜头捕捉到的美好瞬间。</p>
+        <img src="home-bg.jpg" alt="美丽的风景图片作为首页背景" width="100%">
+    </section>
+
+    <!-- 作品集部分 -->
+    <section id="portfolio">
+        <h2>作品集</h2>
+        <div class="image-gallery">
+            <img src="photo1.jpg" alt="摄影作品1" width="300">
+            <img src="photo2.jpg" alt="摄影作品2" width="300">
+            <img src="photo3.jpg" alt="摄影作品3" width="300">
+            <img src="photo4.jpg" alt="摄影作品4" width="300">
+            <img src="photo5.jpg" alt="摄影作品5" width="300">
+            <img src="photo6.jpg" alt="摄影作品6" width="300">
+        </div>
+        <div class="image-description">
+            <h3>作品1描述</h3>
+            <p>这是一幅在日出时分拍摄的海边风景照，金色的阳光洒在海面上，波光粼粼，给人一种宁静而美好的感觉。</p>
+            <h3>作品2描述</h3>
+            <p>城市街头的夜景，灯光璀璨，车水马龙，展现了都市的繁华与活力。</p>
+            <h3>作品3描述</h3>
+            <p>大自然中的一朵盛开的鲜花，鲜艳的色彩和细腻的纹理在镜头下展现得淋漓尽致。</p>
+            <h3>作品4描述</h3>
+            <p>古老建筑的外观，岁月的痕迹在墙壁上留下了独特的韵味，体现了历史的沉淀。</p>
+            <h3>作品5描述</h3>
+            <p>人物肖像，捕捉到了模特眼中的情感和个性，展现了人性的魅力。</p>
+            <h3>作品6描述</h3>
+            <p>野生动物在自然栖息地中的瞬间，展现了它们的生机与活力。</p>
+        </div>
+    </section>
+
+    <!-- 关于我部分 -->
+    <section id="about">
+        <h2>关于我</h2>
+        <p>我是[你的名字]，一名热爱摄影的艺术家。摄影对我来说不仅仅是一种记录方式，更是一种表达自我、探索世界的方式。我热衷于捕捉生活中的美好瞬间，无论是大自然的壮丽景色、城市的喧嚣与宁静，还是人物的情感与故事，都能在我的镜头中找到独特的视角。</p>
+        <p>通过不断地学习和实践，我努力提升自己的摄影技术，尝试不同的风格和题材，希望能够用我的作品带给观众美的享受和情感的共鸣。</p>
+        <img src="about-me.jpg" alt="你的照片" width="200" class="about-img">
+    </section>
+
+    <!-- 联系我部分 -->
+    <section id="contact">
+        <h2>联系我</h2>
+        <p>如果您对我的作品感兴趣，或者有任何合作意向，欢迎随时与我联系。</p>
+        <ul>
+            <li>电子邮件：[你的邮箱地址]</li>
+            <li>电话：[你的电话号码]</li>
+            <li>社交媒体：
+                <a href="https://www.instagram.com/your_username">Instagram</a>
+                <a href="https://www.facebook.com/your_username">Facebook</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2024 [你的名字]. 所有权利保留。</p>
+    </footer>
+
+    <!-- 引入JavaScript文件（如果有需要） -->
+    <script src="script.js"></script>
 </body>
 
 </html>
